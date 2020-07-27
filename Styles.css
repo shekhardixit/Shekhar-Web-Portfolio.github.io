@@ -126,7 +126,47 @@ p{
 	transform: translateY(-20px);
 	text-decoration: none;
 }
+.contactus{
+	width: 100%;
+	height: 100vh;
+	padding: 80px 0;
+	position: relative;
+}
+.contactus:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+.form-button button{
+	border: 1px solid #50d1c0;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: none;
+	color: #50d1c0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	text-align: center;
+	background: transparent;
+}
+.form-button button:hover{
+	color: #50d1c0;
+}
+form:hover .form-button button{
+	background: #fff;
+	color: color: #50d1c0;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
 
+::placeholder{
+	font-size: 0.85rem;
+}
 
 
 
