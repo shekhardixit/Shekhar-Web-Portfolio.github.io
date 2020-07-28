@@ -168,9 +168,40 @@ form:hover .form-button button{
 	font-size: 0.85rem;
 }
 
-
-
-
+.page-footer{
+	font-size: small;
+	background: #00abff;
+	width: 100%;
+	height: auto;
+	padding: 70px 0 20px 0;
+	position: relative;
+}
+.page-footer p{
+	color: #fff;
+}
+.page-footer a{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #fff;
+	text-transform: capitalize;
+}
+.fa-instagram{
+  border-radius: 3px;
+  margin-right: 0.5em;
+}
+.fa-snapchat{
+  border-radius: 3px;
+  margin-right: 0.5em;
+}
+.fa-github{
+  border-radius: 3px;
+  margin-right: 0.5em;
+}
+.fa-linkedin{
+  border-radius: 3px;
+  margin-right: 1em;
+}
 
 
 
