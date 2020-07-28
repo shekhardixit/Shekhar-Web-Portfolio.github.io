@@ -13,7 +13,7 @@
 <body>
 
     <div class="header" id="topheader">
-	<nav class="navbar navbar-expand-lg fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 	<div class="container text-uppercase p-2">
   <a class="navbar-brand font-weigth-bold text-white" href="#">Shekhar Dixit</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,15 +23,15 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto text-uppercase">
       <li class="nav-item active">
-        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#topheader">HOME <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT</a>
+        <a class="nav-link" href="#aboutdiv">ABOUT</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">CERTIFICATIONS AND PROJECTS</a>
       </li><li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
+        <a class="nav-link" href="#contactid">CONTACT</a>
       </li>
     </ul>
   </div>
@@ -41,11 +41,13 @@
 	    <div class="center-div">
 		    <h1 class="font-weigth-bold">I'm Shekhar Dixit.</h1>
 			<p>Full Stack Web Developer.</p>
+			
 			<div class="header-buttons">
-			    <a href="#">About</a>
+			    <a href="#aboutdiv">About</a>
 				<a href="#">CERTIFICATIONS AND PROJECTS</a>
-				<a href="#">CONTACT</a>
+				<a href="#contactid">CONTACT</a>
 			</div>
+			
 		</div>
 	</section>
 	</div>
@@ -247,7 +249,7 @@
 
 <!--************************************************************************Contact us Section ends***************************************************************************-->
 
-<!--************************************************************************Footer Starts******************************************************************************--***************************************************************************-->
+<!--*****************************************************************************Footer Starts********************************************************************************-->
 
 <section>
 <footer class="page-footer pt-4">
@@ -255,26 +257,26 @@
     <div class="row">
       
       <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase">Links</h5>
+        <h5>Links</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">HOME</a>
+            <a href="#topheader">HOME</a>
           </li>
           <li>
-            <a href="#!">ABOUT</a>
+            <a href="#aboutdiv">ABOUT</a>
           </li>
           <li>
             <a href="#!">CERTIFICATIONS and PROJECTS</a>
           </li>
           <li>
-            <a href="#!">CONTACT</a>
+            <a href="#contactid">CONTACT</a>
           </li>
         </ul>
       </div>
 	  
       <div class="col-md-3 mb-md-0 mb-3">
-        <h5 class="text-uppercase">Address</h5>
+        <h5>Address</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -298,19 +300,45 @@
       
       </div>
     </div>
-  </div>
-  <div class="footer-copyright text-center py-3"><p>© 2020 Copyright: Shekhar Dixit
+	<div class="footer-copyright text-center py-3"><p>© 2020 Copyright: Shekhar Dixit
     </p>
   </div>
+  <div class="scrolltop float-right">
+    <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+  </div>
+  </div>
+  
 
 </footer>
 </section>
 
 <!--************************************************************************Footer Ends***************************************************************************-->
 
-</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script>
+		    $('.count').counterUp({
+			delay: 10,
+			time:3000
+			})
+			
+			//get the button:
+			mybutton = document.getElemetById("myBtn");
+			
+			// shows the button after after 20 px from the top:
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction(){
+			if (document.body.scrollTop >20 || document.documentElement.scrollTop >20){
+			mybutton.style.display: "block";}
+			else{
+			mybutton.style.display: "none";}}
+			
+			//scrolls when clicked:
+			function topFunction(){
+			document.body.scrollTop = 0; //For Safari
+			document.documentElement.scrollTop = 0; //For other Browsers
+			}
+		</script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 *{margin: 0; padding: 0; box-sizing:border-box; font-family: 'Poppins', sans-serif;}
 
 .header{
@@ -186,6 +189,13 @@ form:hover .form-button button{
 	color: #fff;
 	text-transform: capitalize;
 }
+.page-footer h5{
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 25px;
+	font-size: 1.2rem!important;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
 .fa-instagram{
   border-radius: 3px;
   margin-right: 0.5em;
@@ -202,7 +212,32 @@ form:hover .form-button button{
   border-radius: 3px;
   margin-right: 1em;
 }
+#myBtn{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	z-index: 99;
+	border: none;
+	color: #fff;
+	background: #00abff;
+	padding: 10px;
+	border-radius: 10px;
+}
+#myBtn:hover{
+	background: #606060;
+}
+@media (max-width: 768px) {
+  .nav-item{
+	  text-align: center!important;
+  }
+  .contactus{
+	  height: auto;
+	  margin-top: 50px;
+	  padding: 0 50px;
+  }
 
+}
 
 
 
