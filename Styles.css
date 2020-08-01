@@ -238,6 +238,14 @@ form:hover .form-button button{
   }
 
 }
+.card-header:hover{
+	width: 100%;
+	padding : 1rem;
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
 
 
 
