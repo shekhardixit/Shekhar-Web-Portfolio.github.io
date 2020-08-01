@@ -245,6 +245,9 @@ form:hover .form-button button{
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
+	color: #f7f7f9;
+	background-color: #000;
+	z-index: 2;
 }
 
 
