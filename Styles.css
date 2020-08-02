@@ -236,7 +236,6 @@ form:hover .form-button button{
 	  margin-top: 50px;
 	  padding: 0 50px;
   }
-
 }
 .card-header:hover{
 	width: 100%;
@@ -245,12 +244,54 @@ form:hover .form-button button{
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
-	color: #f7f7f9;
-	background-color: #000;
-	z-index: 2;
+	color: #000;
+	background-color: #fff;
+	z-index: 999;
+	border: 1px solid black;
+	position:relative;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	transform: translateY(-20px);
+	text-decoration: none;
 }
 
+.services{
+	width: 100%;
+	height: 100vh;
+	padding: 100px 0;
+	background-image: linear-gradient(165deg, #16c9f6 55%, #fff 0%);
+	z-index: -1;
+}
 
-
+.box{
+	text-align:center;
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);
+	border-radius: 5px;
+	transition: 0.3s ease;
+	height: 40vh;
+}
+.box:hover{
+	background: #00abff;
+}
+.box:hover p{
+	color: white;
+}
+.carousel-indicators{
+	position: absolute;
+	right: 0;
+	bottom: -60px!important;
+}
+.carousel-indicators li{
+	background-color: #16c9f6!important;
+}
+.carousel-control-prev, .carousel-control-prev{
+	color:#CFFAFF;
+}
+@media only screen and (max-width: 600px){
+	.services{
+	  height: auto;
+	  margin-top: 50px;
+  }
+}
 
 
