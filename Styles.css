@@ -50,6 +50,13 @@ p{
 	font-weight:bold;
 }
 
+.nav-item a:active{
+	text-decoration: underline;
+}
+.nav-item a:hover{
+	text-decoration: underline;
+}
+
 .header-section{
 	width: 100%;
 	height: inherit;
@@ -291,6 +298,9 @@ form:hover .form-button button{
 	.services{
 	  height: auto;
 	  margin-top: 50px;
+  }
+  #contactid{
+	  position:relative;
   }
 }
 
