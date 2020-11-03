@@ -679,7 +679,7 @@
 		    $('.count').counterUp({
 			delay: 10,
 			time:3000
-			})
+			});
 			
 			//get the button:
 			mybutton = document.getElemetById("myBtn");
@@ -688,9 +688,9 @@
 			window.onscroll = function() {scrollFunction()};
 			function scrollFunction(){
 			if (document.body.scrollTop >20 || document.documentElement.scrollTop >20){
-			mybutton.style.display: "block";}
+			mybutton.style.display= "block";}
 			else{
-			mybutton.style.display: "none";}}
+			mybutton.style.display= "none";}}
 			
 			//scrolls when clicked:
 			function topFunction(){
