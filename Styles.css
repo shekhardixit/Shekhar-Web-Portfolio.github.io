@@ -323,4 +323,13 @@ form:hover .form-button button{
       to{left:0;opacity:1;}
 }
 
+.rightd{
+      position:relative;
+      animation:animateright 3s;
+}
+@keyframes animateright{
+      from{right:-300px;opacity:0;} 
+      to{right:0;opacity:1;}
+}
+
 
