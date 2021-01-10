@@ -332,4 +332,11 @@ form:hover .form-button button{
       to{right:0;opacity:1;}
 }
 
-
+.bottomd{
+      position:relative;
+      animation:animatebottom 3s;
+}
+@keyframes animatebottom{
+      from{bottom:-300px;opacity:0;} 
+      to{bottom:0;opacity:1;}
+}
