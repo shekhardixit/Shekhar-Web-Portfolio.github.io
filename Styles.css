@@ -304,39 +304,3 @@ form:hover .form-button button{
 	  position:relative;
   }
 }
-
-.upd{
-      position:relative;
-      animation:animatetop 3s;
-}
-@keyframes animatetop{
-      from{top:-300px;opacity:0} 
-      to{top:0;opacity:1;}
-}
-
-.leftd{
-      position:relative;
-      animation:animateleft 3s;
-}
-@keyframes animateleft{
-      from{left:-300px;opacity:0;} 
-      to{left:0;opacity:1;}
-}
-
-.rightd{
-      position:relative;
-      animation:animateright 3s;
-}
-@keyframes animateright{
-      from{right:-300px;opacity:0;} 
-      to{right:0;opacity:1;}
-}
-
-.bottomd{
-      position:relative;
-      animation:animatebottom 3s;
-}
-@keyframes animatebottom{
-      from{bottom:-300px;opacity:0;} 
-      to{bottom:0;opacity:1;}
-}
