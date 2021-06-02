@@ -295,6 +295,15 @@ form:hover .form-button button{
 .carousel-control-prev, .carousel-control-prev{
 	color:#CFFAFF;
 }
+
+.project-work{
+	margin: 100px 0;
+}
+.project-work h1{
+	font-size: 2rem;
+	text-align: center;
+}
+
 @media only screen and (max-width: 600px){
 	.services{
 	  height: auto;
