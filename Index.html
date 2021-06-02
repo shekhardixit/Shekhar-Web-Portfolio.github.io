@@ -194,18 +194,23 @@
     <section class="project-work">
         <div class="container d-flex justify-content-around align-items-center text-center">
             <div>
-                <h1>3</h1>
+                <h1 class="count">3</h1>
                 <p>Years of Experience</p>
             </div>
             
             <div>
-                <h1>30</h1>
+                <h1 class="count">30</h1>
                 <p>Certifications</p>
             </div>
             
             <div>
-                <h1>12</h1>
+                <h1 class="count">12</h1>
                 <p>Projects</p>
+            </div>
+
+            <div>
+                <h1 class="count">2</h1>
+                <p>Internships</p>
             </div>
         </div>
     </section>
@@ -777,6 +782,17 @@
             duration: 3000,
           });
         </script>
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" 
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" 
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('.count').counterUp({
+                delay:10,
+                time: 2000
+            })
+        </script>
     </body>
 </html>
